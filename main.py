@@ -244,7 +244,7 @@ def startup():
     text = "4. The Veteran did not have a psychiatric disorder in service that was unrelated to the use of drugs."
 
     classifySentence(text)
-    app.run(port=8000, threaded=False, host=('0.0.0.0'))
+    app.run(port=7000, threaded=False, host=('172.0.0.1'))
 
 if __name__ == '__main__':
   startup()
