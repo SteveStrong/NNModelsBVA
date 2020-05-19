@@ -53,7 +53,7 @@ api = Api(app,
         title='Legal Apprentice API',
         description='API for classifing legal sentences',
         )
-ns = api.namespace('LegalApprentice', description='ML Model of legal cases')
+ns = api.namespace('LegalApprentice', description='ML Model of legal cases v2')
 
 class Data():
     def __init__(self, df):
@@ -244,7 +244,7 @@ def startup():
     text = "4. The Veteran did not have a psychiatric disorder in service that was unrelated to the use of drugs."
 
     classifySentence(text)
-    app.run(port=7000, threaded=False, host=('172.0.0.1'))
+    app.run(port=8000, threaded=False, host=('127.0.0.1'))
 
 if __name__ == '__main__':
   startup()
